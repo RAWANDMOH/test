@@ -7,7 +7,6 @@ image:
 name: postman/newman_alpine33
 entrypoint: [""]
 script: 
--newman --version
 -npm install -g newman-reporter-html
 -newman run a_TrelloAPI.postman_collection --reporters cli-html --reporter-html-export report.html
 
